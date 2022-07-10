@@ -11,6 +11,12 @@ html {
     scroll-behavior: smooth;
 }
 
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 body {
     padding: 2rem;
 }
@@ -19,6 +25,10 @@ a {
     text-decoration: none;
     /* position: relative; */
     transition: opacity 300ms ease;
+}
+
+.purple {
+    color: #6415ff;
 }
 
 img {
@@ -116,4 +126,94 @@ nav {
 .logo__wrapper {
     display: flex;
     align-items: center;
+}
+
+
+/* 
+
+HEADER
+
+*/
+
+.header__container {
+    padding: 96px 0;
+}
+
+.header__row {
+    display: flex;
+    align-items: center;
+}
+
+.header__description {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.header__description-main {
+    color: #1a202c;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.header__description-text {
+    color: #243e63;
+    font-size: 18px;
+    margin: 32px 0;
+}
+
+.header__text-bottom {
+    color: #7c7c7cee;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.header__img-customers {
+    margin: 16px 0 0;
+    padding-right: 128px;
+    filter: grayscale(1) invert(1);
+}
+
+.header__bottom {
+    margin: 80px 0 0;
+}
+
+.header__img--wrapper {
+    width: 60%;
+}
+
+.header__email-text {
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 9999px;
+    border-width: 2px;
+    width: 100%;
+    font-weight: 500;
+    transition-duration: 300ms;
+}
+
+.header__email-btn {
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    width: 100%;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    --tw-bg-opacity: 1;
+    background-color: rgba(100,21,255,var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgba(247,250,252,var(--tw-text-opacity));
+    font-weight: 700;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 9999px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    transition-duration: 300ms;
 }
