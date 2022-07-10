@@ -50,6 +50,13 @@ h3 {
     color: #243e63;
 }
 
+.section__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+}
+
 a {
     text-decoration: none;
     /* position: relative; */
@@ -325,13 +332,6 @@ QUALITY WORK
     display: flex;
 }
 
-.section__description {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 32px 0;
-}
-
 .img__qw {
     width: 50%;
 }
@@ -344,13 +344,6 @@ STEPS
 
 .row__steps {
     display: flex;
-}
-
-.section__description {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 16px 0;
 }
 
 .img__steps {
@@ -373,4 +366,30 @@ STEPS
     font-size: 36px;
     color: #cbd5e0;
     margin-right: 16px;
+}
+
+/* 
+
+VALUES 
+
+*/
+
+.row__values {
+    display: flex;
+}
+
+.principles {
+    display: flex;
+    margin-top: 32px;
+
+}
+
+.principles__emote {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.img__values {
+    width: 50%;
 }
