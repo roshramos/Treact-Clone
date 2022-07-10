@@ -17,6 +17,10 @@ html {
     margin: 0 auto;
 }
 
+.container {
+    padding: 80px 0;
+}
+
 body {
     padding: 2rem;
 }
@@ -27,22 +31,37 @@ h2 {
     color: #243e63;
 }
 
-.section__title {
+h3 {
     font-size: 16px;
     font-weight: bold;
     color: #6415ff;
 }
 
-.section__description {
+.section__para {
     font-size: 18px;
     color: #7c8ba1;
-    margin: 16px;
+    margin: 16px 0 0;
 }
 
 a {
     text-decoration: none;
     /* position: relative; */
     transition: opacity 300ms ease;
+}
+
+.btn {
+    background-color: #6415ff;
+    color: white;
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 12px 32px;
+    margin: 32px 0 0;
+    transition: all 300ms ease;
+    
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 .purple {
@@ -152,10 +171,6 @@ nav {
 HEADER
 
 */
-
-.header__container {
-    padding: 96px 0;
-}
 
 .header__row {
     display: flex;
@@ -277,6 +292,8 @@ FEATURES
 
 
 .service__para {
+    font-size: 16px;
+    color: #7c8ba1;
     margin: 16px 0 0;
 }
 
@@ -289,4 +306,25 @@ FEATURES
 .section__description-features {
     width: 50%;
     text-align: center;
+}
+
+/* 
+
+QUALITY WORK 
+
+*/
+
+.row__qw {
+    display: flex;
+}
+
+.section__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0;
+}
+
+.img__qw {
+    width: 50%;
 }
