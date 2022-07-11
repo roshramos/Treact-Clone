@@ -19,7 +19,7 @@ html {
 }
 
 .container {
-    padding: 80px 0;
+    padding: 96px 0;
 }
 
 body {
@@ -39,7 +39,7 @@ h2 {
     margin: 16px 0 0;
 }
 
-h3 {
+.section__sub-title {
     font-size: 16px;
     font-weight: bold;
     color: #6415ff;
@@ -47,7 +47,6 @@ h3 {
 
 .section__para {
     font-size: 18px;
-    color: #7c8ba1;
     margin: 16px 0 0;
 }
 
@@ -61,13 +60,16 @@ h3 {
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin-right: 36px;
 }
 
 a {
     text-decoration: none;
     position: relative;
     transition: opacity 300ms ease;
+}
+
+p {
+    color: #7c8ba1;
 }
 
 .button {
@@ -78,11 +80,12 @@ a {
     padding: 12px 32px;
     margin: 32px 0 0;
     transition: all 300ms ease;
-    
 }
 
-.buttonn:hover {
+.button:hover {
     cursor: pointer;
+    background-color: #533197;
+    color: lightgray;
 }
 
 .purple {
@@ -145,7 +148,6 @@ NAVIGATION BAR
     right: 0;
     transition: all 300ms ease;
 }
-
 
 .link__hover-effect::after {
     content: "";
@@ -227,7 +229,7 @@ NAVIGATION BAR
 
 /* 
 
-HEADER
+LANDING
 
 */
 
@@ -278,6 +280,8 @@ HEADER
 .landing__img--wrapper {
     width: 60%;
 }
+
+/* NEED TO FIX FORM BORDER COLOR WHEN ACTIVE */
 
 .landing__form {
     display: flex;
@@ -336,22 +340,24 @@ FEATURES
 .services {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .service {
+    display: flex;
+    align-items: flex-start;
     padding: 32px 8px;
     width: calc(100% / 3);
-    display: flex;
+    height: 100%;
 }
 
 .service__description {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-direction: column;
+    margin: 8px 0 0 16px;
 }
 
-.service__title {
+.service__description--title {
     font-size: 24px;
     font-weight: bold;
     color: #243e63;
@@ -361,17 +367,24 @@ FEATURES
 
 .service__para {
     font-size: 16px;
-    color: #7c8ba1;
+    line-height: 2;
+    font-weight: 500;
     margin: 16px 0 0;
 }
 
 .service__img--container {
-    width: 30%;
-    height: 30%;
-    margin: 16px 0 0;
+    display: flex;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    padding: 20px;
 }
 
-.section__description-features {
+.service__img {
+    height: 20px;
+    width: 20px;
+}
+
+.section__description--features {
     width: 50%;
     text-align: center;
 }
@@ -382,12 +395,16 @@ QUALITY WORK
 
 */
 
-.row__qw {
+.row__quality-work {
     display: flex;
 }
 
-.img__qw {
+.img__quality-work {
     width: 50%;
+}
+
+.section__description--container-quality-work {
+    margin-right: 56px;
 }
 
 /* 
@@ -396,17 +413,27 @@ STEPS
 
 */
 
+.section__description--container-steps {
+    margin: 0 0 0 36px;
+    padding: 32px 0;
+}
+
 .row__steps {
     display: flex;
 }
 
-.img__steps {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.img__step {
+    height: 72%;
 }
 
-.numbers__steps {
+.img__step--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.step {
     display: flex;
     margin: 8px;
 }
@@ -414,9 +441,23 @@ STEPS
 .steps__description {
     display: flex;
     flex-direction: column;
+    width: 60%;
 }
 
-.number__style {
+.step__description--title {
+    color: #243e63;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.step__description--para {
+    color: #718096;
+    font-size: 14px;
+    margin: 12px 0 0;
+    line-height: 1.5;
+}
+
+.step__number {
     font-size: 36px;
     color: #cbd5e0;
     margin-right: 16px;
@@ -428,23 +469,59 @@ VALUES
 
 */
 
+.section__description--container-values {
+    width: 50%;
+    padding-right: 56px;
+}
+
 .row__values {
     display: flex;
 }
 
-.principles {
+.values {
     display: flex;
-    margin-top: 32px;
-
 }
 
-.principles__emote {
+.value {
+    margin: 32px 32px 0 0;
+}
+
+.value__title--heading {
+    font-weight: bold;
+    color: #243e63;
+    font-size: 20px;
+}
+
+.value__title {
     display: flex;
-    justify-content: start;
+}
+
+.value__description {
+    color: #718096;
+    font-size: 16px;
+    margin: 16px 0 0;
+}
+
+.value__img--wrapper {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
 }
 
-.img__values {
+.value__img--green {
+    background-color: #9ae6b4;
+}
+
+.value__img--red {
+    background-color: rgba(254,178,178,1);
+}
+
+.img__values--section {
     width: 50%;
 }
 
