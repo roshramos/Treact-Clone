@@ -70,7 +70,7 @@ a {
     transition: opacity 300ms ease;
 }
 
-.btn {
+.button {
     background-color: #6415ff;
     color: white;
     font-size: 14px;
@@ -81,7 +81,7 @@ a {
     
 }
 
-.btn:hover {
+.buttonn:hover {
     cursor: pointer;
 }
 
@@ -231,86 +231,95 @@ HEADER
 
 */
 
-.header__row {
+.landing {
+    padding: 96px 0;
+}
+
+.landing__row {
     display: flex;
     align-items: center;
 }
 
-.header__description {
+.landing__description {
     display: flex;
     flex-direction: column;
     width: 40%;
+    padding-right: 16px;
+    margin-right: 16px;
 }
-.header__description-main {
+.landing__description-main {
     color: #1a202c;
     font-size: 48px;
     font-weight: bold;
 }
 
-.header__description-text {
+.landing__description-text {
     color: #243e63;
     font-size: 18px;
     margin: 32px 0;
 }
 
-.header__text-bottom {
+.landing__customer-text {
     color: #7c7c7cee;
     font-size: 12px;
     font-weight: bold;
 }
 
-.header__img-customers {
+.landing__customers-img {
     margin: 16px 0 0;
     padding-right: 128px;
     filter: grayscale(1) invert(1);
 }
 
-.header__bottom {
+.landing__customers {
     margin: 80px 0 0;
 }
 
-.header__img--wrapper {
+.landing__img--wrapper {
     width: 60%;
 }
 
-/* WATCH VIDEO
-
-.header__email-text {
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-    padding-left: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-radius: 9999px;
-    border-width: 2px;
-    width: 100%;
-    font-weight: 500;
-    transition-duration: 300ms;
+.landing__form {
+    display: flex;
+    border: 2px solid lightgray;
+    border-radius: 100px;
+    cursor: text;
+    transition: border 300ms ease;
+    overflow: hidden;
 }
 
-.header__email-btn {
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+.email-box {
+    border: none;
+    padding-left: 32px;
     width: 100%;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
+    font-weight: 500;
+    transition: all 300ms ease;
+    font-size: 16px;
+}
+
+.email-box:focus {
+    outline: #6415ff;
+}
+
+.landing__form--button {
+    border-radius: 9999px;
+    line-height: 1;
     --tw-bg-opacity: 1;
     background-color: rgba(100,21,255,var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgba(247,250,252,var(--tw-text-opacity));
     font-weight: 700;
-    margin-right: 0.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 9999px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    width: 60%;
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
-    transition-duration: 300ms;
-} */
+    transition: filter 300ms ease;
+    cursor: not-allowed;
+    border: none;
+    margin: 8px 8px 8px 0;
+    padding: 16px 0;
+    font-size: 16px;
+}
 
 /*
 
@@ -533,11 +542,11 @@ PRICING
     border-radius: 0.5
 }
 
-.btn--wrapper {
+.button--wrapper {
     padding: 32px 64px;
 }
 
-.btn__plan {
+.button__plan {
     font-size: 14px;
     font-weight: bold;
     color: white;
@@ -545,18 +554,18 @@ PRICING
     padding: 16px 32px;
 }
 
-.btn-left {
+.button-left {
     background: linear-gradient( 115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100% );
 }
 
-.btn-middle {
+.button-middle {
     --tw-bg-opacity: 1;
     background-color: rgba(226, 232, 240, var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgba(70, 15, 179, var(--tw-text-opacity));
 }
 
-.btn-right {
+.button-right {
     background: linear-gradient( 115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100% );
 }
 
