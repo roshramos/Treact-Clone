@@ -883,3 +883,113 @@ FAQ
     justify-content: space-between;
     align-items: center;
 }
+
+/*
+
+GET-STARTED
+
+*/
+
+/* .row__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6415ff;
+    border-radius: 8px;
+    padding: 80px 60px;
+}
+
+.get-started__description {
+    color: white;
+    width: 50%;
+}
+
+.get-started__buttons {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.get-started__button {
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 12px 32px;
+    margin: 32px 0 0;
+    transition: all 300ms ease;
+} */
+
+.bottom {
+    display: flex;
+    --tw-bg-opacity: 1;
+    background-color: rgba(100, 21, 255, var(--tw-bg-opacity));
+    border-radius: 0.5rem;
+    position: relative;
+    text-align: left;
+    padding: 96px 0px;
+}
+  
+.bottom__container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.bottom__description {
+    width: 50%;
+    font-size: 1.875rem;
+    --tw-text-opacity: 1;
+    color: rgba(247, 250, 252, var(--tw-text-opacity));
+    font-weight: 700;
+  }
+  
+.bottom__buttons {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* .button__bottom {
+    height: 80px;
+    width: 140px;
+    border-radius: 50px;
+} */
+
+.get__started--wrapper {
+    margin-right: 32px;
+    background-color: #f56565);
+}
+
+.get__started {
+    padding: 20px 40px;
+    color: rgb(247, 250, 252);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.contact__us--wrapper {
+    padding: 20px 40px;
+    border: 1px solid rgb(160, 174, 192);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.contact__us {
+    color: rgb(247, 250, 252);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
